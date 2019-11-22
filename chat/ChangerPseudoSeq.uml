@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_jxoyAAa0EeqFscGa7FcbjQ" name="DemarCla">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_jy1E0Aa0EeqFscGa7FcbjQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_jyYY4Aa0EeqFscGa7FcbjQ" name="Interaction1">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_f8ewAAwzEeqKpIgEWi8p8w">
+      <body>vérification si le login est disponible</body>
+    </ownedComment>
+    <ownedRule xmi:type="uml:Constraint" xmi:id="_lGA1oAwzEeqKpIgEWi8p8w" name="Constraint9">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_lGA1oQwzEeqKpIgEWi8p8w" name="constraintSpec">
+        <language>OCL</language>
+        <body>pseudoAccepted = true&#xD;
+</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:type="uml:Constraint" xmi:id="_zQMcYAwzEeqKpIgEWi8p8w" name="Constraint13">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_zQMcYQwzEeqKpIgEWi8p8w" name="constraintSpec">
+        <language>OCL</language>
+        <body>pseudoAccepted = false&#xD;
+</body>
+      </specification>
+    </ownedRule>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_-j0-sAwxEeqKpIgEWi8p8w" name="User" coveredBy="_HiEsEAwyEeqKpIgEWi8p8w _w2goMgwzEeqKpIgEWi8p8w _DGdxgQw0EeqKpIgEWi8p8w"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_AOQgMAwyEeqKpIgEWi8p8w" name="System" coveredBy="_HiEsEQwyEeqKpIgEWi8p8w _ficfYQwzEeqKpIgEWi8p8w _ficfYAwzEeqKpIgEWi8p8w _w2goMQwzEeqKpIgEWi8p8w _DGdxgAw0EeqKpIgEWi8p8w"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_HiEsEAwyEeqKpIgEWi8p8w" name="Message3SendEvent" covered="_-j0-sAwxEeqKpIgEWi8p8w" message="_Hh7iIAwyEeqKpIgEWi8p8w"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_HiEsEQwyEeqKpIgEWi8p8w" name="Message3ReceiveEvent" covered="_AOQgMAwyEeqKpIgEWi8p8w" message="_Hh7iIAwyEeqKpIgEWi8p8w"/>
+    <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_ficfYAwzEeqKpIgEWi8p8w" name="ActionExecutionSpecification6" covered="_AOQgMAwyEeqKpIgEWi8p8w" finish="_ficfYQwzEeqKpIgEWi8p8w" start="_HiEsEQwyEeqKpIgEWi8p8w"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_ficfYQwzEeqKpIgEWi8p8w" name="ActionExecutionSpecification6Finish" covered="_AOQgMAwyEeqKpIgEWi8p8w" execution="_ficfYAwzEeqKpIgEWi8p8w"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_w2goMQwzEeqKpIgEWi8p8w" name="Message10SendEvent" covered="_AOQgMAwyEeqKpIgEWi8p8w" message="_w2goMAwzEeqKpIgEWi8p8w"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_w2goMgwzEeqKpIgEWi8p8w" name="Message10ReceiveEvent" covered="_-j0-sAwxEeqKpIgEWi8p8w" message="_w2goMAwzEeqKpIgEWi8p8w"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_DGdxgAw0EeqKpIgEWi8p8w" name="Message14SendEvent" covered="_AOQgMAwyEeqKpIgEWi8p8w" message="_DGUAgAw0EeqKpIgEWi8p8w"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_DGdxgQw0EeqKpIgEWi8p8w" name="Message14ReceiveEvent" covered="_-j0-sAwxEeqKpIgEWi8p8w" message="_DGUAgAw0EeqKpIgEWi8p8w"/>
+    <message xmi:type="uml:Message" xmi:id="_Hh7iIAwyEeqKpIgEWi8p8w" name="changer(pseudo)" messageSort="asynchCall" receiveEvent="_HiEsEQwyEeqKpIgEWi8p8w" sendEvent="_HiEsEAwyEeqKpIgEWi8p8w"/>
+    <message xmi:type="uml:Message" xmi:id="_w2goMAwzEeqKpIgEWi8p8w" name="acceptation" messageSort="reply" receiveEvent="_w2goMgwzEeqKpIgEWi8p8w" sendEvent="_w2goMQwzEeqKpIgEWi8p8w"/>
+    <message xmi:type="uml:Message" xmi:id="_DGUAgAw0EeqKpIgEWi8p8w" name="peudo not accepted" messageSort="reply" receiveEvent="_DGdxgQw0EeqKpIgEWi8p8w" sendEvent="_DGdxgAw0EeqKpIgEWi8p8w"/>
+  </packagedElement>
+</uml:Model>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_VawKcP79EemPO_8GgSvWsw" name="chat">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_VbWAUP79EemPO_8GgSvWsw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_YMTsEP79EemPO_8GgSvWsw" name="Client"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_cWU1cP79EemPO_8GgSvWsw" name="Se connecter"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_nKXm0P79EemPO_8GgSvWsw" name="Fermer sesssion"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_xpTD0P79EemPO_8GgSvWsw" name="changer pseudo"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_0mBToP79EemPO_8GgSvWsw" name="Réduire l'agent"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_2htkQP79EemPO_8GgSvWsw" name="Avoir l'historique"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_7MTrIP79EemPO_8GgSvWsw" name="démarer une clavardage"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_DBPAAP7-EemPO_8GgSvWsw" memberEnd="_DBPAA_7-EemPO_8GgSvWsw _DBYxAP7-EemPO_8GgSvWsw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DBPAAf7-EemPO_8GgSvWsw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DBPAAv7-EemPO_8GgSvWsw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_DBPAA_7-EemPO_8GgSvWsw" name="choisir pseudo" type="_cWU1cP79EemPO_8GgSvWsw" association="_DBPAAP7-EemPO_8GgSvWsw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_DBYxAP7-EemPO_8GgSvWsw" name="utilisateur" type="_YMTsEP79EemPO_8GgSvWsw" association="_DBPAAP7-EemPO_8GgSvWsw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_OSAJoP7-EemPO_8GgSvWsw" memberEnd="_OSAJo_7-EemPO_8GgSvWsw _OSAJpP7-EemPO_8GgSvWsw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OSAJof7-EemPO_8GgSvWsw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OSAJov7-EemPO_8GgSvWsw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_OSAJo_7-EemPO_8GgSvWsw" name="changer pseudo" type="_xpTD0P79EemPO_8GgSvWsw" association="_OSAJoP7-EemPO_8GgSvWsw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_OSAJpP7-EemPO_8GgSvWsw" type="_YMTsEP79EemPO_8GgSvWsw" association="_OSAJoP7-EemPO_8GgSvWsw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_Qb-G0P7-EemPO_8GgSvWsw" name="&quot;include&quot;" client="_xpTD0P79EemPO_8GgSvWsw" supplier="_bg2JgP7-EemPO_8GgSvWsw"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_bg2JgP7-EemPO_8GgSvWsw" name="Informer les utilisateurs connectés"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_nmIgUP7-EemPO_8GgSvWsw" memberEnd="_nmIgU_7-EemPO_8GgSvWsw _nmIgVP7-EemPO_8GgSvWsw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nmIgUf7-EemPO_8GgSvWsw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nmIgUv7-EemPO_8GgSvWsw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_nmIgU_7-EemPO_8GgSvWsw" name="utilisateur" type="_7MTrIP79EemPO_8GgSvWsw" association="_nmIgUP7-EemPO_8GgSvWsw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_nmIgVP7-EemPO_8GgSvWsw" name="utilisateur" type="_YMTsEP79EemPO_8GgSvWsw" association="_nmIgUP7-EemPO_8GgSvWsw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_1z18MP7-EemPO_8GgSvWsw" memberEnd="_1z18M_7-EemPO_8GgSvWsw _1z18NP7-EemPO_8GgSvWsw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1z18Mf7-EemPO_8GgSvWsw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1z18Mv7-EemPO_8GgSvWsw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_1z18M_7-EemPO_8GgSvWsw" name="fermer sesssion" type="_nKXm0P79EemPO_8GgSvWsw" association="_1z18MP7-EemPO_8GgSvWsw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_1z18NP7-EemPO_8GgSvWsw" name="utilisateur" type="_YMTsEP79EemPO_8GgSvWsw" association="_1z18MP7-EemPO_8GgSvWsw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_40wvgP7-EemPO_8GgSvWsw" memberEnd="_40wvg_7-EemPO_8GgSvWsw _40wvhP7-EemPO_8GgSvWsw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_40wvgf7-EemPO_8GgSvWsw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_40wvgv7-EemPO_8GgSvWsw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_40wvg_7-EemPO_8GgSvWsw" name="réduire l'agent" type="_0mBToP79EemPO_8GgSvWsw" association="_40wvgP7-EemPO_8GgSvWsw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_40wvhP7-EemPO_8GgSvWsw" type="_1z18MP7-EemPO_8GgSvWsw" association="_40wvgP7-EemPO_8GgSvWsw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_DczFMP7_EemPO_8GgSvWsw" name="&quot;include&quot;" client="_7MTrIP79EemPO_8GgSvWsw" supplier="_2htkQP79EemPO_8GgSvWsw"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_vdzQMAwwEeqKpIgEWi8p8w" name="découverte des utilisateurs connectés"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_xqGIoAwwEeqKpIgEWi8p8w" name="&quot;include&quot;" client="_cWU1cP79EemPO_8GgSvWsw" supplier="_vdzQMAwwEeqKpIgEWi8p8w"/>
+</uml:Model>

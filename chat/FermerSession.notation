@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_ZAdRsQw2EeqKpIgEWi8p8w" type="PapyrusUMLSequenceDiagram" name="Sequence Diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_ZAdRsgw2EeqKpIgEWi8p8w" type="Interaction_Shape">
+    <children xmi:type="notation:DecorationNode" xmi:id="_ZAdRsww2EeqKpIgEWi8p8w" type="Interaction_NameLabel"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_ZAdRtAw2EeqKpIgEWi8p8w" type="Interaction_SubfragmentCompartment">
+      <children xmi:type="notation:Shape" xmi:id="_aF6d4Qw2EeqKpIgEWi8p8w" type="Lifeline_Shape">
+        <children xmi:type="notation:DecorationNode" xmi:id="_aF6d4ww2EeqKpIgEWi8p8w" type="Lifeline_NameLabel"/>
+        <element xmi:type="uml:Lifeline" href="FermerSession.uml#_aF6d4Aw2EeqKpIgEWi8p8w"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_aF6d4gw2EeqKpIgEWi8p8w" x="54" y="10"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_bD5wIQw2EeqKpIgEWi8p8w" type="Lifeline_Shape">
+        <children xmi:type="notation:DecorationNode" xmi:id="_bD5wIww2EeqKpIgEWi8p8w" type="Lifeline_NameLabel"/>
+        <children xmi:type="notation:Shape" xmi:id="_mW0O0gw2EeqKpIgEWi8p8w" type="BehaviorExecutionSpecification_Shape">
+          <children xmi:type="notation:DecorationNode" xmi:id="_mW0O1Aw2EeqKpIgEWi8p8w" type="BehaviorExecutionSpecification_Behavior">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_mW0O1Qw2EeqKpIgEWi8p8w" x="18" y="18"/>
+          </children>
+          <element xmi:type="uml:BehaviorExecutionSpecification" href="FermerSession.uml#_mW0O0Aw2EeqKpIgEWi8p8w"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mW0O0ww2EeqKpIgEWi8p8w" x="40" y="126" width="20" height="100"/>
+        </children>
+        <element xmi:type="uml:Lifeline" href="FermerSession.uml#_bD5wIAw2EeqKpIgEWi8p8w"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bD5wIgw2EeqKpIgEWi8p8w" x="254" y="10"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_dfUpsQw2EeqKpIgEWi8p8w" type="Lifeline_Shape">
+        <children xmi:type="notation:DecorationNode" xmi:id="_dfUpsww2EeqKpIgEWi8p8w" type="Lifeline_NameLabel"/>
+        <children xmi:type="notation:Shape" xmi:id="_t8wFcAw2EeqKpIgEWi8p8w" type="ActionExecutionSpecification_Shape">
+          <element xmi:type="uml:ActionExecutionSpecification" href="FermerSession.uml#_t8mUcAw2EeqKpIgEWi8p8w"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_t8wFcQw2EeqKpIgEWi8p8w" x="40" y="166" width="20" height="100"/>
+        </children>
+        <element xmi:type="uml:Lifeline" href="FermerSession.uml#_dfUpsAw2EeqKpIgEWi8p8w"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dfUpsgw2EeqKpIgEWi8p8w" x="474" y="10"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_d2RKEQw2EeqKpIgEWi8p8w" type="Lifeline_Shape">
+        <children xmi:type="notation:DecorationNode" xmi:id="_d2RKEww2EeqKpIgEWi8p8w" type="Lifeline_NameLabel"/>
+        <children xmi:type="notation:Shape" xmi:id="_0BQlkAw2EeqKpIgEWi8p8w" type="BehaviorExecutionSpecification_Shape">
+          <children xmi:type="notation:DecorationNode" xmi:id="_0BQlkgw2EeqKpIgEWi8p8w" type="BehaviorExecutionSpecification_Behavior">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_0BQlkww2EeqKpIgEWi8p8w" x="18" y="18"/>
+          </children>
+          <element xmi:type="uml:BehaviorExecutionSpecification" href="FermerSession.uml#_0BG0kAw2EeqKpIgEWi8p8w"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0BQlkQw2EeqKpIgEWi8p8w" x="40" y="186" width="20" height="100"/>
+        </children>
+        <element xmi:type="uml:Lifeline" href="FermerSession.uml#_d2RKEAw2EeqKpIgEWi8p8w"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d2RKEgw2EeqKpIgEWi8p8w" x="694" y="10"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_usk_4Aw2EeqKpIgEWi8p8w" type="Comment_Shape">
+        <children xmi:type="notation:DecorationNode" xmi:id="_usk_4gw2EeqKpIgEWi8p8w" type="Comment_BodyLabel"/>
+        <element xmi:type="uml:Comment" href="FermerSession.uml#_usb18Aw2EeqKpIgEWi8p8w"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_usk_4Qw2EeqKpIgEWi8p8w" x="574" y="216" width="121" height="41"/>
+      </children>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZAdRtQw2EeqKpIgEWi8p8w"/>
+    </children>
+    <element xmi:type="uml:Interaction" href="FermerSession.uml#_ZAdRsAw2EeqKpIgEWi8p8w"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZAdRtgw2EeqKpIgEWi8p8w"/>
+  </children>
+  <styles xmi:type="notation:StringValueStyle" xmi:id="_ZAdRtww2EeqKpIgEWi8p8w" name="diagram_compatibility_version" stringValue="1.4.0"/>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_ZAdRuAw2EeqKpIgEWi8p8w"/>
+  <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_ZAdRuQw2EeqKpIgEWi8p8w" diagramKindId="org.eclipse.papyrus.uml.diagram.sequence">
+    <owner xmi:type="uml:Model" href="FermerSession.uml#_Y_j50Aw2EeqKpIgEWi8p8w"/>
+  </styles>
+  <element xmi:type="uml:Interaction" href="FermerSession.uml#_ZAdRsAw2EeqKpIgEWi8p8w"/>
+  <edges xmi:type="notation:Connector" xmi:id="_izy0AAw2EeqKpIgEWi8p8w" type="Message_AsynchEdge" source="_aF6d4Qw2EeqKpIgEWi8p8w" target="_bD5wIQw2EeqKpIgEWi8p8w">
+    <children xmi:type="notation:DecorationNode" xmi:id="_izy0Aww2EeqKpIgEWi8p8w" type="Message_AsynchNameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_izy0BAw2EeqKpIgEWi8p8w" x="1" y="-13"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_izy0BQw2EeqKpIgEWi8p8w" type="Message_AsynchStereotypeLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_izy0Bgw2EeqKpIgEWi8p8w" x="1" y="-33"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_izy0AQw2EeqKpIgEWi8p8w"/>
+    <element xmi:type="uml:Message" href="FermerSession.uml#_izpDAAw2EeqKpIgEWi8p8w"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_izy0Agw2EeqKpIgEWi8p8w" points="[0, 0, -200, 0]$[200, 0, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_i0Fu8Aw2EeqKpIgEWi8p8w" id="(0.5,0.18)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_i0Fu8Qw2EeqKpIgEWi8p8w" id="(0.5,0.18)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_nY0eYQw2EeqKpIgEWi8p8w" type="Message_AsynchEdge" source="_bD5wIQw2EeqKpIgEWi8p8w" target="_dfUpsQw2EeqKpIgEWi8p8w">
+    <children xmi:type="notation:DecorationNode" xmi:id="_nY0eZAw2EeqKpIgEWi8p8w" type="Message_AsynchNameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_nY0eZQw2EeqKpIgEWi8p8w" x="1" y="-13"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_nY0eZgw2EeqKpIgEWi8p8w" type="Message_AsynchStereotypeLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_nY0eZww2EeqKpIgEWi8p8w" x="1" y="-33"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_nY0eYgw2EeqKpIgEWi8p8w"/>
+    <element xmi:type="uml:Message" href="FermerSession.uml#_nYrUcAw2EeqKpIgEWi8p8w"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_nY0eYww2EeqKpIgEWi8p8w" points="[-10, -3, -290, -20]$[280, 17, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_nY-PYAw2EeqKpIgEWi8p8w" id="(0.5,0.23714285714285716)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_nY-PYQw2EeqKpIgEWi8p8w" id="(0.5,0.23714285714285716)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_qXP-Yww2EeqKpIgEWi8p8w" type="Message_AsynchEdge" source="_bD5wIQw2EeqKpIgEWi8p8w" target="_d2RKEQw2EeqKpIgEWi8p8w">
+    <children xmi:type="notation:DecorationNode" xmi:id="_qXP-Zgw2EeqKpIgEWi8p8w" type="Message_AsynchNameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_qXP-Zww2EeqKpIgEWi8p8w" x="1" y="-13"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_qXP-aAw2EeqKpIgEWi8p8w" type="Message_AsynchStereotypeLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_qXP-aQw2EeqKpIgEWi8p8w" x="1" y="-33"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_qXP-ZAw2EeqKpIgEWi8p8w"/>
+    <element xmi:type="uml:Message" href="FermerSession.uml#_qXP-YAw2EeqKpIgEWi8p8w"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_qXP-ZQw2EeqKpIgEWi8p8w" points="[-10, -6, -450, -40]$[440, 34, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_qXjgYAw2EeqKpIgEWi8p8w" id="(0.5,0.26571428571428574)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_qXjgYQw2EeqKpIgEWi8p8w" id="(0.5,0.26571428571428574)"/>
+  </edges>
+</notation:Diagram>
