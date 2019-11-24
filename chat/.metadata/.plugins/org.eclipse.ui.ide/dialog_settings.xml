@@ -110,6 +110,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\paul\Desktop\4A\cours\poo\ProjetJava\chat"/>
 			<item value="U:\Windows\Bureau\4ème année\javaProject\chat"/>
 		</list>
 	</section>

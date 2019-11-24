@@ -164,7 +164,7 @@
   <edges xsi:type="notation:Connector" xmi:id="_r0rdcA0tEeq06Zf_NJFbjw" type="Transition_Edge" source="_qJKBsA0rEeq06Zf_NJFbjw" target="_qJKBsA0rEeq06Zf_NJFbjw">
     <children xsi:type="notation:DecorationNode" xmi:id="_r0rdcw0tEeq06Zf_NJFbjw" type="Transition_NameLabel">
       <styles xsi:type="notation:BooleanValueStyle" xmi:id="_sLJcsA0tEeq06Zf_NJFbjw" name="IS_UPDATED_POSITION" booleanValue="true"/>
-      <layoutConstraint xsi:type="notation:Location" xmi:id="_r0rddA0tEeq06Zf_NJFbjw" x="35" y="-107"/>
+      <layoutConstraint xsi:type="notation:Location" xmi:id="_r0rddA0tEeq06Zf_NJFbjw" x="35" y="-18"/>
     </children>
     <children xsi:type="notation:DecorationNode" xmi:id="_r0rddQ0tEeq06Zf_NJFbjw" type="Transition_GuardLabel">
       <styles xsi:type="notation:BooleanValueStyle" xmi:id="_sLQKYA0tEeq06Zf_NJFbjw" name="IS_UPDATED_POSITION" booleanValue="true"/>

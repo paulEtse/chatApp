@@ -9,7 +9,7 @@
       <transition xmi:type="uml:Transition" xmi:id="_r_w-AA0rEeq06Zf_NJFbjw" name="choosePseudo" source="_GBoZ4A0rEeq06Zf_NJFbjw" target="_qJEiIA0rEeq06Zf_NJFbjw"/>
       <transition xmi:type="uml:Transition" xmi:id="_kLsIQA0sEeq06Zf_NJFbjw" name="disconnect" source="_qJEiIA0rEeq06Zf_NJFbjw" target="_eBDK8A0sEeq06Zf_NJFbjw"/>
       <transition xmi:type="uml:Transition" xmi:id="_SqNZEA0tEeq06Zf_NJFbjw" name="beginChat" source="_qJEiIA0rEeq06Zf_NJFbjw" target="_RRmAUA0tEeq06Zf_NJFbjw"/>
-      <transition xmi:type="uml:Transition" xmi:id="_r0eCEA0tEeq06Zf_NJFbjw" name="manage new connection requests from other agents" source="_qJEiIA0rEeq06Zf_NJFbjw" target="_qJEiIA0rEeq06Zf_NJFbjw"/>
+      <transition xmi:type="uml:Transition" xmi:id="_r0eCEA0tEeq06Zf_NJFbjw" name="newConnectionResq()" source="_qJEiIA0rEeq06Zf_NJFbjw" target="_qJEiIA0rEeq06Zf_NJFbjw"/>
       <transition xmi:type="uml:Transition" xmi:id="_7r3YkA0tEeq06Zf_NJFbjw" name="manage new connection requests from other agents " source="_RRmAUA0tEeq06Zf_NJFbjw" target="_RRmAUA0tEeq06Zf_NJFbjw"/>
       <transition xmi:type="uml:Transition" xmi:id="_MoDz8A0uEeq06Zf_NJFbjw" name="disconnect " source="_RRmAUA0tEeq06Zf_NJFbjw" target="_eBDK8A0sEeq06Zf_NJFbjw"/>
       <subvertex xmi:type="uml:State" xmi:id="_GBoZ4A0rEeq06Zf_NJFbjw" name="WaitingForPseudo"/>
