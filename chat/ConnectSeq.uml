@@ -7,10 +7,10 @@
     <ownedComment xmi:type="uml:Comment" xmi:id="_GRBzkAw1EeqKpIgEWi8p8w">
       <body>Vérification du pseudo choisi</body>
     </ownedComment>
-    <lifeline xmi:type="uml:Lifeline" xmi:id="_tibMEAazEeqFscGa7FcbjQ" name="System" coveredBy="_wp8hMQa0EeqFscGa7FcbjQ _jNGWwQw0EeqKpIgEWi8p8w _si958Qw0EeqKpIgEWi8p8w _6oPykQw0EeqKpIgEWi8p8w _v_bZwgw0EeqKpIgEWi8p8w _9s8SoQw0EeqKpIgEWi8p8w _DMENwgw1EeqKpIgEWi8p8w _DMqDoQw1EeqKpIgEWi8p8w _DMgSpgw1EeqKpIgEWi8p8w"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_tibMEAazEeqFscGa7FcbjQ" name="Agent" coveredBy="_wp8hMQa0EeqFscGa7FcbjQ _jNGWwQw0EeqKpIgEWi8p8w _si958Qw0EeqKpIgEWi8p8w _6oPykQw0EeqKpIgEWi8p8w _v_bZwgw0EeqKpIgEWi8p8w _9s8SoQw0EeqKpIgEWi8p8w _DMENwgw1EeqKpIgEWi8p8w _DMqDoQw1EeqKpIgEWi8p8w _DMgSpgw1EeqKpIgEWi8p8w"/>
     <lifeline xmi:type="uml:Lifeline" xmi:id="_oIzmkAa0EeqFscGa7FcbjQ" name="User" coveredBy="_wp8hMAa0EeqFscGa7FcbjQ _9s8Sogw0EeqKpIgEWi8p8w _DMENwQw1EeqKpIgEWi8p8w _DMqDogw1EeqKpIgEWi8p8w"/>
-    <lifeline xmi:type="uml:Lifeline" xmi:id="_XcvHEAw0EeqKpIgEWi8p8w" name="System" coveredBy="_jNGWwgw0EeqKpIgEWi8p8w _v_bZwQw0EeqKpIgEWi8p8w"/>
-    <lifeline xmi:type="uml:Lifeline" xmi:id="_XxJ34Aw0EeqKpIgEWi8p8w" name="Lifeline7" coveredBy="_si958gw0EeqKpIgEWi8p8w _6oPykAw0EeqKpIgEWi8p8w"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_XcvHEAw0EeqKpIgEWi8p8w" name="Agent1" coveredBy="_jNGWwgw0EeqKpIgEWi8p8w _v_bZwQw0EeqKpIgEWi8p8w"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_XxJ34Aw0EeqKpIgEWi8p8w" name="Agent2" coveredBy="_si958gw0EeqKpIgEWi8p8w _6oPykAw0EeqKpIgEWi8p8w"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_wp8hMAa0EeqFscGa7FcbjQ" name="Message3SendEvent" covered="_oIzmkAa0EeqFscGa7FcbjQ" message="_wppmQAa0EeqFscGa7FcbjQ"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_wp8hMQa0EeqFscGa7FcbjQ" name="Message3ReceiveEvent" covered="_tibMEAazEeqFscGa7FcbjQ" message="_wppmQAa0EeqFscGa7FcbjQ"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_jNGWwQw0EeqKpIgEWi8p8w" name="Message8SendEvent" covered="_tibMEAazEeqFscGa7FcbjQ" message="_jNGWwAw0EeqKpIgEWi8p8w"/>

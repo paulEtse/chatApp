@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmi:id="_Joi14BD_EeqiJ985wTu6bA" type="CompositeStructure" name="Composite Structure Diagram" measurementUnit="Pixel">
+  <children xsi:type="notation:Shape" xmi:id="_TOWSgRD_EeqiJ985wTu6bA" type="Class_Shape">
+    <children xsi:type="notation:DecorationNode" xmi:id="_TOWSgxD_EeqiJ985wTu6bA" type="Class_NameLabel"/>
+    <children xsi:type="notation:DecorationNode" xmi:id="_TOWShBD_EeqiJ985wTu6bA" type="Class_FloatingNameLabel">
+      <layoutConstraint xsi:type="notation:Location" xmi:id="_TOWShRD_EeqiJ985wTu6bA" y="15"/>
+    </children>
+    <children xsi:type="notation:BasicCompartment" xmi:id="_TOWShhD_EeqiJ985wTu6bA" type="Class_StructureCompartment">
+      <styles xsi:type="notation:TitleStyle" xmi:id="_TOWShxD_EeqiJ985wTu6bA"/>
+      <layoutConstraint xsi:type="notation:Bounds" xmi:id="_TOWSiBD_EeqiJ985wTu6bA"/>
+    </children>
+    <element href="strutComp.uml#_TOWSgBD_EeqiJ985wTu6bA"/>
+    <layoutConstraint xsi:type="notation:Bounds" xmi:id="_TOWSghD_EeqiJ985wTu6bA" x="220" y="180" width="185" height="86"/>
+  </children>
+  <styles xsi:type="notation:StringValueStyle" xmi:id="_Joi14RD_EeqiJ985wTu6bA" name="diagram_compatibility_version" stringValue="1.4.0"/>
+  <styles xsi:type="notation:DiagramStyle" xmi:id="_Joi14hD_EeqiJ985wTu6bA"/>
+  <styles xsi:type="style:PapyrusDiagramStyle" xmi:id="_Joi14xD_EeqiJ985wTu6bA" diagramKindId="org.eclipse.papyrus.uml.diagram.compositeStructure.root.package">
+    <owner href="strutComp.uml#_JoGJ8BD_EeqiJ985wTu6bA"/>
+  </styles>
+  <element href="strutComp.uml#_JoGJ8BD_EeqiJ985wTu6bA"/>
+</notation:Diagram>

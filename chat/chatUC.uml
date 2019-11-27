@@ -45,9 +45,17 @@
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_40wvgv7-EemPO_8GgSvWsw" key="nature" value="UML_Nature"/>
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_40wvg_7-EemPO_8GgSvWsw" name="réduire l'agent" type="_0mBToP79EemPO_8GgSvWsw" association="_40wvgP7-EemPO_8GgSvWsw"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_40wvhP7-EemPO_8GgSvWsw" type="_1z18MP7-EemPO_8GgSvWsw" association="_40wvgP7-EemPO_8GgSvWsw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_40wvhP7-EemPO_8GgSvWsw" type="_nmIgUP7-EemPO_8GgSvWsw" association="_40wvgP7-EemPO_8GgSvWsw"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_DczFMP7_EemPO_8GgSvWsw" name="&quot;include&quot;" client="_7MTrIP79EemPO_8GgSvWsw" supplier="_2htkQP79EemPO_8GgSvWsw"/>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_vdzQMAwwEeqKpIgEWi8p8w" name="découverte des utilisateurs connectés"/>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_xqGIoAwwEeqKpIgEWi8p8w" name="&quot;include&quot;" client="_cWU1cP79EemPO_8GgSvWsw" supplier="_vdzQMAwwEeqKpIgEWi8p8w"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_Fa8QMBEDEeqiJ985wTu6bA" name="envoyer Message"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_I7dJkBEDEeqiJ985wTu6bA" memberEnd="_I7dJkxEDEeqiJ985wTu6bA _I7dJlBEDEeqiJ985wTu6bA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_I7dJkREDEeqiJ985wTu6bA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_I7dJkhEDEeqiJ985wTu6bA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_I7dJkxEDEeqiJ985wTu6bA" name="envoyer message" type="_Fa8QMBEDEeqiJ985wTu6bA" association="_I7dJkBEDEeqiJ985wTu6bA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_I7dJlBEDEeqiJ985wTu6bA" type="_1z18MP7-EemPO_8GgSvWsw" association="_I7dJkBEDEeqiJ985wTu6bA"/>
+  </packagedElement>
 </uml:Model>
