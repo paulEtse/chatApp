@@ -16,29 +16,12 @@
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_T95jUBEDEeqiJ985wTu6bA" name="ManageNewConReq"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_ZA48EBEDEeqiJ985wTu6bA" name="manageNewChat"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_fEVl8BKoEeqGJMlmBLkKjA" name="jButton1"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_2NAGQP8CEemPO_8GgSvWsw" name="changePseudo">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_WWqxYP8DEemPO_8GgSvWsw" name="pseudo">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </ownedParameter>
-    </ownedOperation>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_jKvg0P8DEemPO_8GgSvWsw" name="ChoosePseudo">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_yM-J4P8DEemPO_8GgSvWsw" name="pseudo" effect="create">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </ownedParameter>
-    </ownedOperation>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_0h72IP8DEemPO_8GgSvWsw" name="checkPseudo">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_6DgoUP8DEemPO_8GgSvWsw" name="pseudo">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </ownedParameter>
-    </ownedOperation>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_9vOsIP8DEemPO_8GgSvWsw" name="close"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_bbvbgP8IEemPO_8GgSvWsw" name="connect"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_m8uycP8IEemPO_8GgSvWsw" name="disconnect"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_ARk9EAz6EeqzZfZTqHeYGA" name="startChatWithSpecificUser"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="__61XUBKnEeqGJMlmBLkKjA" name="initComponents"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_EYenUBKoEeqGJMlmBLkKjA" name="jButton1ActionPerformed">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_ULcw0BKoEeqGJMlmBLkKjA" name="evt"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_E-ee0BgjEeqnzbTd4-4T4A" name="jTextField1ActionPerformed">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_I0ypEBgjEeqnzbTd4-4T4A" name="evt"/>
     </ownedOperation>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_D4X0oP8EEemPO_8GgSvWsw" name="Message">
@@ -51,7 +34,6 @@
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_nHvjEBKlEeqGJMlmBLkKjA" name="Type" type="_Msy40BKmEeqGJMlmBLkKjA"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_XEwnoBKlEeqGJMlmBLkKjA" name="toString"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_uqqh8BKlEeqGJMlmBLkKjA" name="getType"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_1_1_wBKlEeqGJMlmBLkKjA" name="setType">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_6K1ZgBKlEeqGJMlmBLkKjA" name="type" type="_Msy40BKmEeqGJMlmBLkKjA"/>
@@ -112,10 +94,6 @@
     <ownedAttribute xmi:type="uml:Property" xmi:id="_5X9H4BKhEeqGJMlmBLkKjA" name="port" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
     </ownedAttribute>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_UQ0RkBD-EeqiJ985wTu6bA" name="getHistorique">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_KDNZsBKhEeqGJMlmBLkKjA" name="u"/>
-    </ownedOperation>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_SmMj4BKgEeqGJMlmBLkKjA" name="getPort"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_ZAFeIBKgEeqGJMlmBLkKjA" name="setPseudo">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_GDOWEBKhEeqGJMlmBLkKjA" name="pseudo">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -126,11 +104,6 @@
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_VKMVMBKhEeqGJMlmBLkKjA" name="equals">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_YyNkwBKhEeqGJMlmBLkKjA" name="obj"/>
-    </ownedOperation>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_iJy_MBKhEeqGJMlmBLkKjA" name="setPort">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_sBcZwBKhEeqGJMlmBLkKjA" name="port">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-      </ownedParameter>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_yGBLUBKhEeqGJMlmBLkKjA" name="getIp"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_wYrqUBKiEeqGJMlmBLkKjA" name="getPseudo"/>
@@ -157,11 +130,25 @@
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_F1DP0BKkEeqGJMlmBLkKjA" name="myIpAddress"/>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_KAyQcBKkEeqGJMlmBLkKjA" name="manageNewMessage"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_OaYt8BKkEeqGJMlmBLkKjA" name="process">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Rh4qYBKkEeqGJMlmBLkKjA" name="m" type="_D4X0oP8EEemPO_8GgSvWsw"/>
-    </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_VrEtUBKkEeqGJMlmBLkKjA" name="connect"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_YFIU8BKkEeqGJMlmBLkKjA" name="run"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_5JNrkBgjEeqnzbTd4-4T4A" name="getOwner"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_7DY5QBgjEeqnzbTd4-4T4A" name="setOwner">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="__Q9s8BgjEeqnzbTd4-4T4A" name="owner" type="_1tNoIA5GEeq1xrJNpUYfYQ"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_I1RUwBgkEeqnzbTd4-4T4A" name="manage">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_LTqCwBgkEeqnzbTd4-4T4A" name="m" type="_D4X0oP8EEemPO_8GgSvWsw"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_QdUEMBgkEeqnzbTd4-4T4A" name="getConnectedUsers"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_TAoVgBgkEeqnzbTd4-4T4A" name="setConnectedUsers" visibility="public">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_XO5swBgkEeqnzbTd4-4T4A" name="connectedUsers" type="_1tNoIA5GEeq1xrJNpUYfYQ"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_aeUPEBgkEeqnzbTd4-4T4A" name="chooseAndSendPseudo">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_d14AwBgkEeqnzbTd4-4T4A" name="pseudo">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_i-uw8BgkEeqnzbTd4-4T4A" name="disconnect"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_kQXT8BD9EeqiJ985wTu6bA" memberEnd="_kQXT8xD9EeqiJ985wTu6bA _kQXT9hD9EeqiJ985wTu6bA">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_kQXT8RD9EeqiJ985wTu6bA" source="org.eclipse.papyrus">
@@ -177,6 +164,13 @@
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_sgZeMRECEeqiJ985wTu6bA" name="m" type="_D4X0oP8EEemPO_8GgSvWsw"/>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="__xQE4BKkEeqGJMlmBLkKjA" name="listen"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_VlvMABgjEeqnzbTd4-4T4A" name="addToHistorique">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_ZBObcBgjEeqnzbTd4-4T4A" name="m" type="_D4X0oP8EEemPO_8GgSvWsw"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_boSkUBgjEeqnzbTd4-4T4A" name="sendMessage">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_e5YhoBgjEeqnzbTd4-4T4A" name="m" type="_D4X0oP8EEemPO_8GgSvWsw"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_hRtD4BgjEeqnzbTd4-4T4A" name="run"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_jyw_sBECEeqiJ985wTu6bA" memberEnd="_jyw_sxECEeqiJ985wTu6bA _jy6JoBECEeqiJ985wTu6bA">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jyw_sRECEeqiJ985wTu6bA" source="org.eclipse.papyrus">
