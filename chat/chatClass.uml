@@ -23,6 +23,8 @@
     <ownedOperation xmi:type="uml:Operation" xmi:id="_E-ee0BgjEeqnzbTd4-4T4A" name="jTextField1ActionPerformed">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_I0ypEBgjEeqnzbTd4-4T4A" name="evt"/>
     </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_WDIDkCDfEeqQwZfM1cUvdQ" name="filterHistorique"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_ZyzaUCDfEeqQwZfM1cUvdQ" name="initComponents"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_D4X0oP8EEemPO_8GgSvWsw" name="Message">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_IrC5cP8EEemPO_8GgSvWsw" name="sender" visibility="private" type="_1tNoIA5GEeq1xrJNpUYfYQ"/>
@@ -156,7 +158,7 @@
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_kQXT9hD9EeqiJ985wTu6bA" name="agent" type="_lQe6wP8CEemPO_8GgSvWsw" association="_kQXT8BD9EeqiJ985wTu6bA"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_G1614BECEeqiJ985wTu6bA" name="ManageChat">
+  <packagedElement xmi:type="uml:Class" xmi:id="_G1614BECEeqiJ985wTu6bA" name="ManageChat" visibility="private">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_o74PoBKkEeqGJMlmBLkKjA" name="tcpPort">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
     </ownedAttribute>
@@ -171,6 +173,14 @@
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_e5YhoBgjEeqnzbTd4-4T4A" name="m" type="_D4X0oP8EEemPO_8GgSvWsw"/>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_hRtD4BgjEeqnzbTd4-4T4A" name="run"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_mm1tgCDfEeqQwZfM1cUvdQ" name="setCurrentReceiver">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_wUVGgCDfEeqQwZfM1cUvdQ" name="currentReceiver" type="_1tNoIA5GEeq1xrJNpUYfYQ"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_0O6FsCDfEeqQwZfM1cUvdQ" name="getCurrentMessages"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_79DdICDfEeqQwZfM1cUvdQ" name="setCurrentMessages">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_BNbKkCDgEeqQwZfM1cUvdQ" name="currentMessages" type="_D4X0oP8EEemPO_8GgSvWsw"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_E3AgYCDgEeqQwZfM1cUvdQ" name="save"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_jyw_sBECEeqiJ985wTu6bA" memberEnd="_jyw_sxECEeqiJ985wTu6bA _jy6JoBECEeqiJ985wTu6bA">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jyw_sRECEeqiJ985wTu6bA" source="org.eclipse.papyrus">
