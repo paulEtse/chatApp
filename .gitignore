@@ -35,4 +35,4 @@ buildNumber.properties
 !/.mvn/wrapper/maven-wrapper.jar
 /.metadata/
 mavenproject2/stockage
-chat/*
+/chat/*
