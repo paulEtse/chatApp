@@ -2,7 +2,7 @@
 Projet d'une application de Chat en Java
 
 The folder "mavenproject2" consists of all the code for this project.
-The folder "chat" consists of all the conception and sequence diagrams.
+The file conception.pdf contains all the conception of the project.
 
 For the detailed information of the code, it consists of different classes namely,
 
