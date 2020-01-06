@@ -24,3 +24,6 @@ Looking into details,
 
 please find the same in these folders and for more information contact
 "paul etse" and "Charan Nalakalasala"
+
+
+In order to run the projet, you just need to open the project mavenproject with your IDE, and run the file Agent
