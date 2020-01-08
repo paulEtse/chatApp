@@ -87,7 +87,6 @@ public class ManageNewConnections implements Runnable{
 	    	        broadcast = interfaceAddress.getBroadcast();
 	    	        if (broadcast == null)
 	    	            continue;
-	    	        System.out.println(broadcast.getHostAddress());
 	    	        return broadcast;
 	    	       }
 	    	}	
@@ -140,8 +139,10 @@ public class ManageNewConnections implements Runnable{
   				}
   	    		break;
   	    	case ConnectRep :
+                        if(connectedUsers.contains(m.getSender()))
+                            connectedUsers.removeElement(m.getSender());
   	    		connectedUsers.add(0, m.getSender());
-  				System.out.println("Connected "+getConnectedUsers());
+                        System.out.println("Connected "+getConnectedUsers());
   	    		break;
   	    	case DisConnect :
   	    		connectedUsers.removeElement(m.getSender());

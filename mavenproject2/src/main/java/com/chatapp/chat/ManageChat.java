@@ -1,5 +1,6 @@
 package com.chatapp.chat;
 
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -11,8 +12,9 @@ import java.net.Socket;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.time.LocalDateTime;
-import java.util.Scanner;
 import java.util.Vector;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import javax.swing.DefaultListModel;
 
@@ -59,6 +61,8 @@ public class ManageChat implements Runnable{
 	}
 	public DefaultListModel<Message> getCurrentMessages() {
 		return currentMessages;
+	}	public static void main(String[] args) {
+		System.out.println("Hello");
 	}
 	public void setCurrentMessages(DefaultListModel<Message> currentMessages) {
 		this.currentMessages = currentMessages;
@@ -79,13 +83,12 @@ public class ManageChat implements Runnable{
 						historique.add(m);
 						System.out.println("received "+m);
 						if(m.getType()==MessageType.File) {
-							try {
-								Files.write(new File(("/home/"+m.getText())).toPath(), m.getData());
-							} catch (IOException e) {
-								// TODO Auto-generated catch block
-								e.printStackTrace();
-							}
-						}
+                                                    try {
+                                                        Files.write(new File((m.getText())).toPath(), m.getData());
+                                                    } catch (IOException ex) {
+                                                        Logger.getLogger(ManageChat.class.getName()).log(Level.SEVERE, null, ex);
+                                                    }
+                                                }
 						if(currentReceiver!=null&&m.getSender().equals(currentReceiver)) {
 							System.out.println("RecAj");
 							currentMessages.addElement(m);
@@ -137,16 +140,4 @@ public class ManageChat implements Runnable{
 		}
 		return null;
 	}
-	public static void main(String[] args) {
-		User sender = new User();sender.setPseudo("Paul");
-		User receiver = new User();receiver.setPseudo("Paul");
-
-		 Message mes=new Message(); mes.setSender(sender);
-		 mes.setReceiver(receiver);
-		 mes.setDate(LocalDateTime.now());
-		 System.out.println("Saisir le message : ");
-		 Scanner scanIn = new Scanner(System.in); String s = scanIn.nextLine();
-		 mes.setText(s);
-		 System.out.println(mes);		 
-}
 }

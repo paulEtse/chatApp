@@ -6,7 +6,6 @@
 package com.chatapp.chat;
 import java.io.Serializable;
 import java.net.*;
-import java.util.Vector;
 /**
  *
  * @author etse
@@ -32,10 +31,10 @@ public class User implements Serializable {
 			return false;
 		return true;
 	}
-	void setPseudo(String pseudo){
+	public void setPseudo(String pseudo){
     this.pseudo=pseudo;
     }
-    String getPseudo(){
+    public String getPseudo(){
     return pseudo;
     }
 	public void setIp(InetAddress ip) {
