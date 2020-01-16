@@ -7,7 +7,6 @@ package com.chatapp.chat;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
-import java.util.Date;
 
 /**
  *

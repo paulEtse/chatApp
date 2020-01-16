@@ -8,6 +8,9 @@ package com.chatapp.chat;
 
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.net.UnknownHostException;
+import java.sql.SQLException;
+import java.text.ParseException;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -35,7 +38,6 @@ public class Agent extends javax.swing.JFrame {
      	this.addWindowListener(new WindowAdapter() {
   	      public void windowClosing(WindowEvent e) {
   	        connections.disconnect();
-  	        chat.save();
   	        System.out.println("close");
   	      }});
         initComponents();
@@ -264,6 +266,21 @@ public class Agent extends javax.swing.JFrame {
         else if(!find)
         {
             connections.chooseAndSendPseudo(pseudo);
+            try {
+				chat.setHistorique(DbServices.getMessages(sender));
+			} catch (ClassNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (UnknownHostException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (ParseException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
             jPanel1.setVisible(false);
             jPanel3.setVisible(true);
             jTextField1.setText(null);

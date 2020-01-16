@@ -11,6 +11,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.sql.SQLException;
 import java.time.LocalDateTime;
 import java.util.Vector;
 import java.util.logging.Level;
@@ -22,7 +23,6 @@ import javax.swing.DefaultListModel;
 public class ManageChat implements Runnable{
 	public final int tcpPort=5555;
 	private Vector<Message> historique;
-	private final String fichier="stockage";
     private DefaultListModel<Message> currentMessages;
     private User currentReceiver;
 	public User getCurrentReceiver() {
@@ -39,25 +39,9 @@ public class ManageChat implements Runnable{
 		currentMessages= new DefaultListModel<Message>();
 		historique=new Vector<Message>();
 		new Thread(this).start();
-		FileInputStream fi;
-		try {
-			File f= new File(fichier);
-			fi = new FileInputStream(f);
-			if(f.length()!= 0) {
-				ObjectInputStream oi = new ObjectInputStream(fi);
-				if(f.length()>0)
-				{
-					historique=(Vector<Message>) oi.readObject();
-				}
-				oi.close();
-				fi.close();
-				System.out.println("Historique " + historique);
-			}
-			
-		} catch (IOException | ClassNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	}
+	public void setHistorique(Vector<Message> historique) {
+		this.historique = historique;
 	}
 	public DefaultListModel<Message> getCurrentMessages() {
 		return currentMessages;
@@ -101,25 +85,17 @@ public class ManageChat implements Runnable{
 			e.printStackTrace();
 		}
 	}
-	public void save()
-	{
-		System.out.println("Historique " + historique);
-		try {
-			FileOutputStream f = new FileOutputStream(new File(fichier));
-			ObjectOutputStream o = new ObjectOutputStream(f);
-			o.writeObject(historique);
-			o.close();
-			f.close();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
 	public void sendMessage(Message m) {
 		try {
 			Socket s = new Socket(m.getReceiver().getIp(),tcpPort);
 			ObjectOutputStream out = new ObjectOutputStream(s.getOutputStream());
 			historique.add(m);
+			try {
+				DbServices.putMessage(m);
+			} catch (ClassNotFoundException | SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			out.writeObject(m);
 			s.close();
 		} catch (IOException e) {
