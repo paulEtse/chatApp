@@ -27,9 +27,9 @@ To run the project with servlets, we just need set up the global variable subcri
 This file contains global configurations of the project.
 ## Test
 You can test the app on two (or more) machines by following these steps:
-* install java in the machine
-* download the chatApp.jar file
+* Install java in the machine
+* Download the chatApp.jar file
 * In your terminal, navigate to the folder that contains the downloaded chatApp.jar file and type the command
 ```java -jar chatApp.jar```
-The app will be lunched in a new windows, you can then choose your login. The app will show connected users. You can select any of them and start chatting with him. You will get the history if your old converstations with that user.
+The app will be lunched in a new windows, you can then choose your login. The app will show connected users. You can select any of them and start chatting with him. You will get the history if your old converstions with that user.
 You can also exchange files.
