@@ -1,12 +1,12 @@
-# ProjetJava : a chat App made in java
+# ProjetJava: a chat App made in java
 ## Contents
-The project contains : 
-* The source code of chat app : chatApp
-* The source code of servlets : servlet
-* The jar executable file of the chat app : chatApp.jar
-* The war file of servlet that can be deployed in a tomcat server : servlet.war
-* The documentation of the project : chat.pdf
-* The file to import to create the database structure : sql.txt
+The project contains: 
+* The source code of chat app: *chatApp*
+* The source code of servlets: *servlet*
+* The jar executable file of the chat app: *chatApp.jar*
+* The war file of servlet that can be deployed in a tomcat server: *servlet.war*
+* The documentation of the project: *chat.pdf*
+* The file to import to create the database structure: *sql.txt*
 
 ## Compilation 
 To make this app runnable, we need to compile source code of the app and create the executable jar file. Maven has been used to manage dependencies so the command are : 
