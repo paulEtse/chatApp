@@ -22,9 +22,9 @@ To run the app, all we need is jdk > 1.8 and the command is:
 java -jar chatApp.jar
 ```
 The app can work with or without servlet.
-To run the project with servlets, we just need set up the global variable subcription to true in the Global.java.
+To run the project with servlets, we just need set up the global variable subcription to true in the Global.java. This file contains global configurations of the project.
 > subcription = true<br>
-This file contains global configurations of the project.
+
 ## Test
 You can test the app on two (or more) machines by following these steps:
 * Install java in the machine
