@@ -12,9 +12,9 @@ import java.time.LocalDateTime;
 import java.util.Vector;
 
 public class DbServices {
-	 public static String  url = "jdbc:mysql://localhost:3306/chat";
-	    public static String login = "root";
-	    public static String password =  "";
+	 public static String  url =Global.Dburl;
+	    public static String login =Global.Dblogin;
+	    public static String password =  Global.Dbpassword;
 	    public static void connect() throws ClassNotFoundException, SQLException{
 	        Class.forName("com.mysql.cj.jdbc.Driver") ;
 	        Connection con = DriverManager.getConnection(url, login, password) ;
@@ -63,11 +63,12 @@ public class DbServices {
 	    Class.forName("com.mysql.cj.jdbc.Driver") ;
 	    Connection con = DriverManager.getConnection(url, login, password) ;
 	        Statement statment = con.createStatement();
-	        String query = "select count(*) from user where ip = '"+u.getIp().getHostAddress()+"'";
+	        String query = "select count(*) as rs from user where ip = '"+u.getIp().getHostAddress()+"'";
 	        ResultSet rs = statment.executeQuery(query);
-	        rs.next();
-	        int rows= rs.getInt(1);
-	        return rows>=1;
+	        int rows=0;
+	        if(rs.next())
+	        	rows=Integer.parseInt(rs.getString(1));
+	        return rows==1;
 	}
 	public static User getUser(User u) throws ClassNotFoundException, SQLException
 	{
@@ -90,8 +91,11 @@ public class DbServices {
 	        String query2= "update user set pseudo= '"+u.getPseudo()+"' where ip = '"+u.getIp().getHostAddress()+"'";
 	        Statement statement = con.createStatement();
 	        if(findUser(u))
+	        {
 	            statement.executeUpdate(query2);
+	        }
 	        else
-	            statement.executeUpdate(query1);
+	        { statement.executeUpdate(query1);
+	        }
 	}
 }

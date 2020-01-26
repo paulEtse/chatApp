@@ -22,8 +22,8 @@ import org.apache.commons.lang3.SerializationUtils;
  */
 public class ManageNewConnections implements Runnable{
     public InetAddress broadcast;
-    public static final int broadcastPort=55555;
-    public static final  int NotifyPort=44444;
+    public static final int broadcastPort=Global.BroadcastPort;
+    public static final  int NotifyPort=Global.NotifyPort;
     DatagramSocket socket;
     private DefaultListModel<User> connectedUsers=new DefaultListModel<User>();
     public boolean subcription=false;

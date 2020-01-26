@@ -21,7 +21,7 @@ public class ServerServices {
 	private static final OkHttpClient client= new OkHttpClient();
     public static DefaultListModel<User>  sendGetRequest() throws MalformedURLException, IOException, ClassNotFoundException{
         Request request = new Request.Builder()
-                .url("https://srv-gei-tomcat.insa-toulouse.fr/serverPaul-1.0-SNAPSHOT/paul")
+                .url(Global.ServletUrl)
                 .build();
         Call call= client.newCall(request);
         Response response= call.execute();
@@ -36,7 +36,7 @@ public class ServerServices {
       System.out.println(json);
         RequestBody body = RequestBody.create(JSON, json);
         Request resquest = new Request.Builder()
-                .url("https://srv-gei-tomcat.insa-toulouse.fr/serverPaul-1.0-SNAPSHOT/paul")
+                .url(Global.ServletUrl)
                 .post(body)
                 .build();
         Call call = client.newCall(resquest);
@@ -49,7 +49,7 @@ public class ServerServices {
       String json= mapper.writeValueAsString(u);
         RequestBody body = RequestBody.create(JSON, json);
         Request resquest = new Request.Builder()
-                .url("https://srv-gei-tomcat.insa-toulouse.fr/serverPaul-1.0-SNAPSHOT/paul")
+                .url(Global.ServletUrl)
                 .put(body)
                 .build();
     }

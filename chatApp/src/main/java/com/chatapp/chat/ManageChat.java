@@ -21,7 +21,7 @@ import javax.swing.DefaultListModel;
 
 
 public class ManageChat implements Runnable{
-	public final int tcpPort=5555;
+	public int tcpPort=5555;
 	private Vector<Message> historique;
     private DefaultListModel<Message> currentMessages;
     private User currentReceiver;
