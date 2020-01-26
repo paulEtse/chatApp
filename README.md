@@ -3,10 +3,11 @@
 This is a project of an application for chating in local network. Each active user can discover connected users in his local network and exchange text or file with them. The historic of the conversations are stored in a database. The system is totally decentralised except of the database that is common to all users. The project has an extension using servlet in other to allow a user use system without being in the local network. For more details follow this link [specification.pdf](https://moodle.insa-toulouse.fr/pluginfile.php/127921/mod_resource/content/1/INSA_COO_POO_URD_v3.1.pdf).
 ## Contents
 The project contains: 
+* The jar executable file of the chat app: **chatApp.jar**
+* The windows executable file of the chat app: **chatApp.exe**
+* The war file of servlet that can be deployed in a tomcat server: **servlet.war**
 * The source code of chat app: **chatApp**
 * The source code of servlets: **servlet**
-* The jar executable file of the chat app: **chatApp.jar**
-* The war file of servlet that can be deployed in a tomcat server: **servlet.war**
 * The documentation of the project: **chat.pdf**
 * The file to import to create the database structure: **sql.txt**
 ## Compilation 
