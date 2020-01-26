@@ -1,6 +1,6 @@
 # ProjetJava: a chat App made in java
 # Description 
-This is a project of an application for chating in local network. Each active user can discover connected users in his local network and exchange text or file with them. The historic of the conversations are stored in a database. The system is totally decentralised except of the database that is common to all users. The project has an extension using servlet in other to allow a user use system without being in the local network. For more detail follow this link [specification.pdf](https://moodle.insa-toulouse.fr/pluginfile.php/127921/mod_resource/content/1/INSA_COO_POO_URD_v3.1.pdf).
+This is a project of an application for chating in local network. Each active user can discover connected users in his local network and exchange text or file with them. The historic of the conversations are stored in a database. The system is totally decentralised except of the database that is common to all users. The project has an extension using servlet in other to allow a user use system without being in the local network. For more details follow this link [specification.pdf](https://moodle.insa-toulouse.fr/pluginfile.php/127921/mod_resource/content/1/INSA_COO_POO_URD_v3.1.pdf).
 ## Contents
 The project contains: 
 * The source code of chat app: **chatApp**
