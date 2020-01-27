@@ -9,7 +9,7 @@ The project contains:
 * The source code of chat app: **chatApp**
 * The source code of servlets: **servlet**
 * The documentation of the project: **chat.pdf**
-* The file to import to create the database structure: **sql.txt**
+* The file to import to create the database structure: **chat.sql**
 ## Compilation 
 To make this app runnable, we need to compile the source code of the app and create the executable jar file. Maven has been used to manage dependencies so the command are: 
 ```
