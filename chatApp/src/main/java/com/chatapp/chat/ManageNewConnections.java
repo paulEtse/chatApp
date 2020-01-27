@@ -26,7 +26,7 @@ public class ManageNewConnections implements Runnable{
     public static final  int NotifyPort=Global.NotifyPort;
     DatagramSocket socket;
     private DefaultListModel<User> connectedUsers=new DefaultListModel<User>();
-    public boolean subcription=false;
+    public boolean subcription=Global.subcription;
     private  User owner;
 
     public ManageNewConnections(User u)

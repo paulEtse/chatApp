@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<servlet>
+		<servlet-name>Serveur</servlet-name>
+		<servlet-class>chat.serverpaul.Serveur</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Serveur</servlet-name>
+		<url-pattern>/paul</url-pattern>
+	</servlet-mapping>
+</web-app>
