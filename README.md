@@ -24,7 +24,7 @@ java -jar chatApp.jar
 ```
 In a windows system, you can just double-click the file chatApp.exe
 The app can work with or without servlet.
-To run the project with servlets, we just need to set up the global variable subscription to true in the Global.java. This file contains global configurations of the project.
+To run the project with servlets, we just need to set up the global variable subscription to true in the Global.java. This file contains global configurations of the project (such as the database url, the tomcat server url for servlet deployment etc).
 > subscription = true<br>
 
 ## Test
