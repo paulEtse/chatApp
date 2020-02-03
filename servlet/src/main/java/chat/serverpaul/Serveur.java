@@ -52,7 +52,7 @@ public class Serveur extends HttpServlet{
         {
             m.setSender(u);
             m.setReceiver(connectedUserList.elementAt(i));
-           // notify(m);
+            notify(m);
         }
     }
     private void notify(Message m){
@@ -85,15 +85,18 @@ public class Serveur extends HttpServlet{
         {
             m.setSender(u);
             m.setReceiver(connectedUserList.elementAt(i));
-           // notify(m);
+            notify(m);
         }
     }
     protected void doPut(HttpServletRequest req,
                      HttpServletResponse resp)
               throws ServletException,
                      IOException{
-        doDelete(req, resp);
-        doPut(req, resp);
+        BufferedReader reader = req.getReader();
+        Gson gson = new Gson();
+        User u = gson.fromJson(reader, User.class);
+        connectedUserList.removeElement(u);
+        connectedUserList.addElement(u);
     }
 }
     
