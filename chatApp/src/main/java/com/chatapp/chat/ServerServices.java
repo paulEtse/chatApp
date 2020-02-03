@@ -10,6 +10,7 @@ import javax.swing.DefaultListModel;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.gson.Gson;
 import com.squareup.okhttp.Call;
 import com.squareup.okhttp.MediaType;
 import com.squareup.okhttp.OkHttpClient;
@@ -19,15 +20,19 @@ import com.squareup.okhttp.Response;
 
 public class ServerServices {
 	private static final OkHttpClient client= new OkHttpClient();
-    public static DefaultListModel<User>  sendGetRequest() throws MalformedURLException, IOException, ClassNotFoundException{
+    public static User[]  sendGetRequest() throws MalformedURLException, IOException, ClassNotFoundException{
         Request request = new Request.Builder()
                 .url(Global.ServletUrl)
                 .build();
         Call call= client.newCall(request);
         Response response= call.execute();
-        ObjectInputStream in = new ObjectInputStream(response.body().byteStream());
-        System.out.println(response.body().string());
-        return (DefaultListModel<User>) in.readObject();
+        String json= response.body().string();
+        Gson gson = new Gson();
+        NewsDTO data= gson.fromJson(json, NewsDTO.class);
+        if (data.delegate!=null)
+        	return data.delegate;
+        else 
+        	return null;
 }
     public static void sendPostRequest(User u) throws JsonProcessingException, IOException{
       MediaType JSON = MediaType.parse("application/json; charset=utf-8");
@@ -42,7 +47,6 @@ public class ServerServices {
         Call call = client.newCall(resquest);
         Response response=call.execute();
     }
-    //Not used yet
     public static void sendPutRequest(User u) throws JsonProcessingException{
     MediaType JSON = MediaType.parse("application/json; charset=utf-8");
       ObjectMapper mapper = new ObjectMapper();
@@ -70,4 +74,10 @@ public class ServerServices {
             Logger.getLogger(ServerServices.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
+}
+class NewsDTO
+{
+  String status; 
+  int totalResults;
+  public User[] delegate;
 }

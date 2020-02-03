@@ -81,6 +81,7 @@ public class ManageNewConnections implements Runnable{
 					new Thread(){
 						public void run() {
 							manage(m);
+							System.out.println("Notification");
 						}
 					}.start();	
 	    	}
@@ -193,13 +194,20 @@ public void chooseAndSendPseudo(String pseudo) {
 		}
     }
     public void subscribe(){
-        /*try {
-            connectedUsers=ServerReq.sendGetRequest();
-        } catch (IOException ex) {
-            Logger.getLogger(ManageNewConnections.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (ClassNotFoundException ex) {
-            Logger.getLogger(ManageNewConnections.class.getName()).log(Level.SEVERE, null, ex);
-        }*/
+    	 try {
+             User[] l=ServerServices.sendGetRequest();
+             for(int i=0;i<l.length;i++)
+             {
+             	if(connectedUsers.contains(l[i]))
+                     connectedUsers.removeElement(l[i]);
+             	connectedUsers.addElement(l[i]);
+             }
+             
+         } catch (IOException ex) {
+             Logger.getLogger(ManageNewConnections.class.getName()).log(Level.SEVERE, null, ex);
+         } catch (ClassNotFoundException ex) {
+             Logger.getLogger(ManageNewConnections.class.getName()).log(Level.SEVERE, null, ex);
+         }
     }
     public void run() {
             manageLocalMessage();
