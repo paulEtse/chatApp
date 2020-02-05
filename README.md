@@ -8,7 +8,7 @@ The project contains:
 * The war file of servlet that can be deployed in a tomcat server: **servlet.war**
 * The source code of chat app: **chatApp**
 * The source code of servlets: **servlet**
-* The documentation of the project: **chat.pdf**
+* The documentation of the project: **documentation.pdf**
 * The file to import to create the database structure: **chat.sql**
 ## Compilation 
 To make this app runnable, we need to compile the source code of the app and create an executable jar file. Maven has been used to manage dependencies so the command are: 
